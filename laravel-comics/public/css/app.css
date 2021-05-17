@@ -66,7 +66,7 @@ body .movies-list .current-label {
   color: white;
   font-weight: 600;
   white-space: nowrap;
-  background-color: #0181F8;
+  background-color: #00a9d9;
   position: absolute;
   top: -20px;
   left: 120px;
@@ -120,10 +120,61 @@ body .movies-list .b-container .b-more {
   font-size: 13px;
   font-weight: 600;
   color: #ecebe1;
-  background-color: #0181F8;
+  background-color: #00a9d9;
   padding: 6px 35px;
   text-align: center;
   border-radius: 2px;
   border-color: transparent;
+}
+
+body .seller-row {
+  width: 100%;
+  height: 130px;
+  background-color: #00a9d9;
+  color: white;
+}
+
+body .seller-row .sell-items {
+  width: 80%;
+  height: 130px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+body .seller-row .sell-items a {
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-right: 35px;
+}
+
+body .seller-row .sell-items a span {
+  padding-left: 15px;
+  font-weight: 600;
+}
+
+body .seller-row .sell-items .digitalImg {
+  width: 50px;
+}
+
+body .seller-row .sell-items .mercImg {
+  width: 60px;
+}
+
+body .seller-row .sell-items .subImg {
+  width: 57px;
+}
+
+body .seller-row .sell-items .posImg {
+  width: 37px;
+}
+
+body .seller-row .sell-items .visaImg {
+  width: 60px;
 }
 
