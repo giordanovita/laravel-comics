@@ -48,6 +48,7 @@
                     <div class="description-item">
                         
                         <p>
+                            
                             {{$item['description']}}
                         </p>
 
@@ -60,7 +61,152 @@
 
         <section class="more-info">
 
-            
+            <div class="info-container">
+                <div class="info-left-side">
+                    <div class="first-row">
+                        <h4>
+                            Talent
+                        </h4>
+                    </div>
+
+                    <div class="mini-row">
+                        <div class="mini-title">
+                            Art by:
+                        </div>
+
+                        <div class="mini-content">
+                            @foreach ($item['artists'] as $artist)
+                                @if ($loop->last)
+                                    <a href="" >
+                                        {{$artist}}
+                                    </a>
+                                @else 
+                                    <a href="" >
+                                        {{$artist}}
+                                    </a>
+                                    ,
+                                @endif
+                            @endforeach
+                        
+                        </div>
+                    </div>
+
+                    <div class="mini-row">
+                        <div class="mini-title">
+                            Written by:
+                        </div>
+
+                        <div class="mini-content">
+                            @foreach ($item['writers'] as $writers)
+                                @if ($loop->last)
+                                    <a href="" >
+                                        {{$writers}}
+                                    </a>
+                                @else 
+                                    <a href="" >
+                                        {{$writers}}
+                                    </a>
+                                    ,
+                                @endif
+                            @endforeach
+                        
+                        </div>
+                    </div>
+                </div>
+
+
+               
+                <div class="info-right-side">
+                    <div class="first-row">
+                        <h4>
+                            Specs
+                        </h4>
+                    </div>
+
+                    <div class="mini-row">
+                        <div class="mini-title">
+                            Series:
+                        </div>
+
+                        <div class="mini-content">
+                           <a href="">
+                                {{strtoupper($item['series'])}}
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mini-row">
+                        <div class="mini-title">
+                            U.S. Price:
+                        </div>
+                    
+                        <div class="mini-content"> 
+                            {{$item['price']}}
+                        </div>
+                    </div>
+                        <div class="mini-row">
+
+                            <div class="mini-title">
+                                On Sale Date: 
+                            </div>
+                       
+
+                        
+                            <div class="mini-content">
+                                {{$item['sale_date']}}
+                            </div>
+                        </div>
+                        
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seller-grey-row">
+                <ul class="sell-items">
+                    
+                    <li>
+                        <a href="">
+    
+                            <img class="digitalImg" src="{{ asset('/storage/images/buy-comics-digital-comics.png') }}" alt="">
+                            <span>DIGITAL COMICS</span>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="">
+    
+                            <img class="mercImg" src="{{ asset('/storage/images/buy-comics-merchandise.png') }}" alt="">
+                            <span>DC MERCHANDISE</span>
+                        </a>
+                    </li>
+    
+                    <li>
+                         <a href="">
+    
+                            <img class="subImg" src="{{ asset('/storage/images/buy-comics-subscriptions.png') }}" alt="">
+                            <span>SUBSCRIPTION</span>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="">
+    
+                            <img class="posImg" src="{{ asset('/storage/images/buy-comics-shop-locator.png') }}" alt="">  
+                            <span>COME SHOP LOCATION</span>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="">
+    
+                             <img class="visaImg" src="{{ asset('/storage/images/buy-dc-power-visa.svg') }}" alt="">  
+                             <span>DC POWER VISA</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
         </section>
 
 

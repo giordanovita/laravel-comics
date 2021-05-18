@@ -480,11 +480,132 @@ body .foot-down .douwn-container .douwn-left-right img:hover {
 
 .flayer {
   position: absolute;
-  width: 350px;
-  height: 350px;
+  width: 320px;
+  height: 320px;
   -o-object-fit: contain;
-     object-fit: contain;
-  top: 35px;
-  right: 35px;
+  object-fit: contain;
+  top: 44px;
+  right: -17px;
+}
+
+.more-info {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  padding: 40px 0 0 0;
+  border-top: 1px solid #afaeae;
+  background-color: #d4d1d1;
+  font-size: 16px;
+}
+
+.more-info .info-container {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.more-info .info-container .info-left-side,
+.more-info .info-container .info-right-side {
+  width: 47%;
+}
+
+.more-info .info-container .first-row {
+  color: #003f5e;
+  font-size: 23px;
+  padding: 15px 0;
+  border-bottom: 1px solid #afaeae;
+}
+
+.more-info .info-container .mini-title {
+  color: #003f5e;
+  width: 30%;
+  height: auto;
+  font-size: 17px;
+  display: inline-block;
+}
+
+.more-info .info-container .mini-content {
+  width: 70%;
+  height: auto;
+  display: inline-block;
+}
+
+.more-info .info-container .mini-row {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #afaeae;
+  padding: 10px 0;
+}
+
+.more-info .info-container .mini-row a {
+  color: #0282f9;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.seller-grey-row {
+  width: 100%;
+  height: 100px;
+  color: white;
+  background-color: #d4d1d1;
+  border-top: 1px solid #afaeae;
+  margin-top: 80px;
+}
+
+.seller-grey-row .sell-items {
+  width: 80%;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.seller-grey-row .sell-items li {
+  border-right: 1px solid #afaeae;
+}
+
+.seller-grey-row .sell-items li:last-child {
+  border: none;
+}
+
+.seller-grey-row .sell-items a {
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.seller-grey-row .sell-items a span {
+  padding-left: 15px;
+  font-weight: 600;
+}
+
+.seller-grey-row .sell-items .digitalImg {
+  width: 50px;
+}
+
+.seller-grey-row .sell-items .mercImg {
+  width: 60px;
+}
+
+.seller-grey-row .sell-items .subImg {
+  width: 57px;
+}
+
+.seller-grey-row .sell-items .posImg {
+  width: 37px;
+}
+
+.seller-grey-row .sell-items .visaImg {
+  width: 60px;
 }
 

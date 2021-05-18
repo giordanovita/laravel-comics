@@ -14,7 +14,7 @@
             </div>
            <ul>
             
-                @foreach ($data as $movie)
+               @foreach  ($data as $movie)
 
                   <li class="card-container">  
                         <a href="{{ route('details', $loop->index) }}">
