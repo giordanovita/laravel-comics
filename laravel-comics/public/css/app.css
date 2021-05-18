@@ -117,17 +117,21 @@ body .movies-list ul {
   padding-top: 30px;
 }
 
-body .movies-list ul li {
+body .movies-list ul li.card-container {
   width: calc(100% / 6 - 20px);
   height: 220px;
   margin: 40px 20px 0 0;
 }
 
-body .movies-list ul li a {
+body .movies-list ul li.card-container:hover {
+  transform: scale(1.1);
+}
+
+body .movies-list ul li.card-container a {
   text-decoration: none;
 }
 
-body .movies-list ul li img {
+body .movies-list ul li.card-container img.img-card {
   width: 100%;
   height: 80%;
   -o-object-fit: cover;
@@ -136,7 +140,7 @@ body .movies-list ul li img {
      object-position: top;
 }
 
-body .movies-list ul li span {
+body .movies-list ul li.card-container span {
   color: #ecebe1;
   font-weight: 600;
   font-size: 11px;
@@ -258,6 +262,10 @@ body footer .foot-up .left-side .foot-list-container ul li a {
   white-space: nowrap;
 }
 
+body footer .foot-up .left-side .foot-list-container ul li a:hover {
+  color: #0282f9;
+}
+
 body footer .foot-up .left-side .foot-list-container ul li {
   margin-bottom: 7px;
 }
@@ -277,7 +285,6 @@ body footer .foot-up .left-side .foot-list-container ul:last-child {
 }
 
 body footer .credits {
-  /* display: block; */
   font-size: 14px;
   color: #959595;
   align-self: flex-end;
@@ -330,6 +337,10 @@ body .foot-down .douwn-container .douwn-left-side a {
   border: 2px solid #027FF1;
 }
 
+body .foot-down .douwn-container .douwn-left-side a:hover {
+  background-color: #027FF1;
+}
+
 body .foot-down .douwn-container .douwn-left-right {
   width: 40%;
   display: flex;
@@ -347,5 +358,133 @@ body .foot-down .douwn-container .douwn-left-right img {
   width: 30px;
   height: 30px;
   margin-right: 12px;
+}
+
+body .foot-down .douwn-container .douwn-left-right img:hover {
+  background-color: #1B1B1B;
+  border-radius: 100%;
+}
+
+/* stile pagina details */
+
+.blue-row {
+  width: 100%;
+  height: 70px;
+  position: relative;
+  background-color: #0181F8;
+}
+
+.blue-row .img-datails-container span a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.blue-row .img-datails-container .blue-label {
+  background-color: #00A8D8;
+  text-align: center;
+  top: -175px;
+  left: 240px;
+  position: absolute;
+  z-index: 900;
+}
+
+.blue-row .img-datails-container .blue-label:hover {
+  text-decoration: underline;
+}
+
+.blue-row .img-datails-container .blue-label.gallery {
+  width: 160px;
+  height: 20px;
+  line-height: 20px;
+  top: 40px;
+  left: 240px;
+}
+
+.blue-row .img-datails-container .img-details-card {
+  height: 235px;
+  width: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  position: absolute;
+  top: -175px;
+  left: 240px;
+}
+
+.movie-details {
+  width: 80%;
+  height: 500px;
+  display: flex;
+  margin: auto;
+}
+
+.movie-details-container {
+  width: 100%;
+  margin: auto;
+  height: 500px;
+  position: relative;
+}
+
+.movie-details-container .title-item {
+  color: #003f5e;
+  font-size: 38px;
+  line-height: 40px;
+  margin: 60px 0 40px 0;
+}
+
+.movie-details-container .price-container {
+  display: flex;
+}
+
+.movie-details-container .price-container .price-item {
+  color: #96e66a;
+  height: 40px;
+  width: 30%;
+  background-color: #54B958;
+  line-height: 40px;
+  padding-left: 20px;
+  border-bottom: 2px solid #337935;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.movie-details-container .price-container .price-item span span {
+  color: white;
+}
+
+.movie-details-container .price-container .available {
+  white-space: nowrap;
+}
+
+.movie-details-container .price-container .available .border {
+  height: 100%;
+  width: 115px;
+  border-right: 2px solid #337935;
+}
+
+.movie-details-container .price-container .available .border span {
+  margin-left: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.movie-details-container .description-item {
+  width: 60%;
+  font-size: 17px;
+  line-height: 23px;
+  color: #363535;
+  padding-top: 20px;
+}
+
+.flayer {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  top: 35px;
+  right: 35px;
 }
 

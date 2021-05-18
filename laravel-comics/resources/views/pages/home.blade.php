@@ -16,9 +16,9 @@
             
                 @foreach ($data as $movie)
 
-                  <li>  
-                        <a href="">
-                            <img src="{{$movie['thumb']}}" alt="">
+                  <li class="card-container">  
+                        <a href="{{ route('details', $loop->index) }}">
+                            <img class="img-card" src="{{$movie['thumb']}}" alt="">
                             <span>
                                 {{strtoupper($movie['series'])}}
 

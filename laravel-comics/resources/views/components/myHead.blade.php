@@ -13,7 +13,7 @@
         <header>
             <div class="main-nav">
 
-            <a href="">
+            <a href="/home">
                <img src="{{ asset('/storage/images/dc-logo.png') }}" alt="">
             </a>
 
